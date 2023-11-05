@@ -4,7 +4,6 @@ WORKDIR /app
 
 COPY . .
 
-RUN apt update -y
 RUN npm install -y
 RUN npm run test
 
