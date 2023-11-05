@@ -4,8 +4,7 @@ WORKDIR /app
 
 COPY . .
 
-RUN apt-get update 
-RUN nodejs install -y
+RUN apt-get update -y
 RUN npm install -y
 RUN npm run test
 
