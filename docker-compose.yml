@@ -1,7 +1,7 @@
 version: "3.9"
 services:
   web:
-    iamge: "syedshah642/todo-node-app:latest"
+    image: "syedshah642/todo-node-app:latest"
     ports:
       - "8000:8000" 
 
