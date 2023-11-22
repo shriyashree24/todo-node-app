@@ -26,14 +26,14 @@ kind: Service
 metadata:
   name: node-app-service
 spec:
-  type: NodePort
+  type: LoadBalancer
   selector:
     app: node-app
   ports:
     - protocol: TCP
       port: 8000
       targetPort: 8000
-      nodePort: 30001
+      nodePort: 30002
 
 ---
 apiVersion: networking.k8s.io/v1
@@ -50,4 +50,4 @@ spec:
               service:
                 name: node-app-service
                 port:
-                  number: 30001
+                  number: 30002
