@@ -42,7 +42,8 @@ metadata:
   name: node-app-ingress
 spec:
   rules:
-    - http:
+    - host: my-app.com
+      http:
         paths:
           - path: /
             pathType: Prefix
